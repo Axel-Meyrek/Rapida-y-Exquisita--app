@@ -41,6 +41,9 @@
     max-width: 1200px;
     margin: 0 auto; 
 }
+span{
+    color: var(--colorSecundario);
+}
 
 
 /* Header-----------------------------------------------------------------------------------*/
@@ -62,6 +65,7 @@
 }
 .conteinerLogo_item{
     font-size: 1.5rem;
+    color: var(--colorPrincipal);
 }
 .conteinerBuscador{
     width:70%;
