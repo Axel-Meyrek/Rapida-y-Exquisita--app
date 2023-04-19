@@ -1,0 +1,143 @@
+/* Importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap');
+/* font-family: 'Work Sans', sans-serif; 300, 500 */
+
+/* Varibles-----------------------------------------------------------*/
+
+:root{
+    /* Color */
+    --colorPrincipal: #F9D949;
+    --colorSecundario: #F45050;
+    --white: white;
+    --colorTexto: black;
+
+    /* font-weight */
+    --weightLigth: 300;
+    --weightBold: 500;
+
+    /* Font-size */
+    --fontTitle: 1.2rem;
+    --fontText: 1rem;
+
+    /* Shadow */
+    --shadowButtons: 0 4px 10px rgba(0, 0, 0, 0.25);
+    --shadowComponents: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Normalización Principal --------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+.conteiner{
+    width: 90%;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+
+/* Header-----------------------------------------------------------------------------------*/
+.header{
+    background-color: var(--white);
+    box-shadow: var(--shadowComponents);
+    padding: 1rem 0; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5
+}
+.headerConteinerItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.conteinerLogo_item{
+    font-size: 1.5rem;
+}
+.conteinerBuscador{
+    width:70%;
+}
+.conteinerBuscador_input{
+    width: 100%;
+    padding: .5em 2em;
+    border-radius: 50px;
+    border: 1px solid black;
+    font-size: var(--fontText);
+    color: var(--colorTexto);
+}
+
+
+
+/* Recetas ------------------------------------------------------------- */
+.conteinerRecetas{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+    gap: 30px;
+}
+
+.receta{
+    max-width: 350px;
+    padding: 1em;
+    box-shadow: var(--shadowComponents);
+    
+}
+.receta_conteinerImg{
+    position: relative;
+    width: 100%;
+    max-height: 194px;
+    overflow: hidden;
+}
+.receta_conteinerImg img{
+    width: 100%;
+}
+.recetaInfo{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.recetaInfo_title{
+    font-size: var(--fontTitle);
+    font-weight: var(--weightBold);
+}
+.recetaInfo_description{
+    font-size: var(--fontText);
+    font-weight: var(--weightLigth);
+    text-align: justify;
+}
+.recetaButtons{
+    display: flex;
+    gap: 10px;
+}
+.recetaButtons_item{
+    display: inline-block;
+    width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: var(--shadowButtons);
+    transition: all .3s;
+}
+.recetaButtons_item:hover{
+    scale: 1.1;
+}
+.recetaButtons_item--red{
+    background-color: var(--colorSecundario);
+    color: var(--white);
+}
+.recetaButtons_item--yellow{
+    background-color: var(--colorPrincipal);
+}
+

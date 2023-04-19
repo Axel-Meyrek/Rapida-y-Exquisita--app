@@ -1,0 +1,25 @@
+@media (max-width: 1270px) {
+    .receta{
+        max-width: 500px;
+        width: 45%;
+    }
+}
+@media (max-width:1150px) {
+    .headerConteinerItems{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .conteinerBuscador{
+        width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    .receta{
+        max-width: none;
+        width: 100%;
+    }
+    .receta_conteinerImg{
+        max-height: 200px;
+        overflow: hidden;
+    }
+}
